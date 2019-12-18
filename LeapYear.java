@@ -8,8 +8,9 @@ public class LeapYear {
 		Scanner scn= new Scanner(System.in);
 		System.out.println("enter year");
 		int year=scn.nextInt();
-		if(year<=1582) {
-			System.out.println("please enter year that is above than 1582");
+		if(year<=999) {
+			System.out.println("please enter year that is above than 999");
+			year=scn.nextInt();
 		}//if
 		if((year%4==0&&year%100!=0)||year%400==0) {
 			System.out.println(year+" is leap year");
